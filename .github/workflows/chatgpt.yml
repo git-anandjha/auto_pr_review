@@ -15,4 +15,4 @@ jobs:
           sessionToken: ${{ secrets.CHATGPT_SESSION_TOKEN }}
           split: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THIS_GITHUB_TOKEN: ${{ secrets.THIS_GITHUB_TOKEN }}
