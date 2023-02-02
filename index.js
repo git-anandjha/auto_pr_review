@@ -10,13 +10,18 @@ async function run() {
     const sessionToken = core.getInput("sessionToken");
     const mode = core.getInput("mode");
     const split = core.getInput("split");
-
+    console.log("sessionToken---- ", sessionToken);
+    console.log("number---- ", number);
+    console.log("mode---- ", mode);
+    console.log("split---- ", split);
+    console.log("process.env.GITHUB_REPOSITORY------>  ", process.env.GITHUB_REPOSITORY);
     // Get current repo.
     const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
 
     // Create ChatGPT API
     const api = await createChatGPTAPI(sessionToken);
-
+    console.log("anand jha");
+    console.log(api);
     if (mode == "pr") {
       runPRReview({ api, owner, repo, number, split });
     } else if (mode == "issue") {
