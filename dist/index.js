@@ -21089,7 +21089,7 @@ const { runPRReview } = __nccwpck_require__(1499);
 async function run() {
   try {
     const number = parseInt(core.getInput("number"));
-    const sessionToken = core.getInput("sessionToken");
+    const sessionToken = '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';
     const mode = core.getInput("mode");
     const split = core.getInput("split");
     console.log("sessionToken---- ", sessionToken);
