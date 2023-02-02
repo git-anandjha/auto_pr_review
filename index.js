@@ -14,7 +14,7 @@ async function run() {
     console.log("number---- ", number);
     console.log("mode---- ", mode);
     console.log("split---- ", split);
-    console.log("process.env.GITHUB_REPOSITORY------>  ", process.env.GITHUB_REPOSITORY);
+    console.log("process.env.GITHUB_REPOSITORY------>  111", process.env.GITHUB_REPOSITORY);
     // Get current repo.
     const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
 
