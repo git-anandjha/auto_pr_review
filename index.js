@@ -1,6 +1,5 @@
 const core = require("@actions/core");
 
-const { createChatGPTAPI } = require("./chatgpt");
 const { runPRReview } = require("./run");
 const { ChatGPTAPI } = require("chatgpt");
 
