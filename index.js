@@ -7,7 +7,7 @@ const { ChatGPTAPI } = require("chatgpt");
 async function run() {
   try {
     const number = parseInt(core.getInput("number"));
-    const sessionToken = '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';
+    const sessionToken = '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';
     const mode = core.getInput("mode");
     const split = core.getInput("split");
     console.log("sessionToken---- ", sessionToken);

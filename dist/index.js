@@ -38266,7 +38266,6 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(2186);
 
-const { createChatGPTAPI } = __nccwpck_require__(4835);
 const { runPRReview } = __nccwpck_require__(1499);
 const { ChatGPTAPI } = __nccwpck_require__(198);
 
@@ -38274,7 +38273,7 @@ const { ChatGPTAPI } = __nccwpck_require__(198);
 async function run() {
   try {
     const number = parseInt(core.getInput("number"));
-    const sessionToken = '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';
+    const sessionToken = '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';
     const mode = core.getInput("mode");
     const split = core.getInput("split");
     console.log("sessionToken---- ", sessionToken);
