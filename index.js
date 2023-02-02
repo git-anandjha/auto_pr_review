@@ -2,6 +2,7 @@ const core = require("@actions/core");
 
 const { createChatGPTAPI } = require("./chatgpt");
 const { runPRReview } = require("./run");
+const { ChatGPTAPI } = require("chatgpt");
 
 // most @actions toolkit packages have async methods
 async function run() {
@@ -19,7 +20,9 @@ async function run() {
     const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
 
     // Create ChatGPT API
-    const api = await createChatGPTAPI(sessionToken);
+    const api = await new ChatGPTAPI({
+      apiKey: sessionToken
+    });
     console.log("anand jha");
     console.log(api);
     if (mode == "pr") {
