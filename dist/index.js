@@ -38273,7 +38273,7 @@ const { ChatGPTAPI } = __nccwpck_require__(198);
 async function run() {
   try {
     const number = parseInt(core.getInput("number"));
-    const sessionToken = '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';
+    const sessionToken = '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';
     const mode = core.getInput("mode");
     const split = core.getInput("split");
     console.log("sessionToken---- ", sessionToken);
